@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 15%;
+    width: 100%;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.leftNavDiv{
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    width: 200px;
+}
+
+#logo{
+    width: 100%;    
+    margin-left: 20px;
+  
+}
+
+.centerNavDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    width: 100%;
+
+}
+
+
+.hero{
+    flex: 1;
+    background-color: red;
+}
+
+
+.footer{
+    background-color: white;
+    height: 200px;
+}

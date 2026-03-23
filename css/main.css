@@ -1,13 +1,15 @@
 *{
     margin: 0;
 }
-
+:root {
+    --primary-color:  white;
+}
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: black;
+    background-color: #bd9c72;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,8 +18,9 @@ body{
 nav{
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: black;
     width: 100%;
+    height: 100px;
 
 }
 
@@ -50,15 +53,29 @@ ul{
 
 .linkToHtml{
     display: inline-block;
+    position: relative;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 2rem;
     transition: transform 0.2s ease;
 }
 
-.linkToHtml:hover{
-    transform: scale(1.1);
+.linkToHtml::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: width 0.6s ease;
 }
+
+.linkToHtml:hover::after{
+    width: 100%;
+}
+
+
 
 
 .hero{
@@ -72,7 +89,15 @@ ul{
 
 
 #centerHeroDiv{
-    background-color: #bd9c72;
+    /* background: linear-gradient(
+    120deg,
+    #090101,
+    #140a0a,
+    #0b0505,
+    #0b0101
+  );; */
+    background: #080808;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +115,8 @@ ul{
 
 #quizHeaderText{
     font-family: "Montserrat";
-    color: black;
+    color: var(--primary-color);
+    filter: brightness(1.25);
     font-size: 7rem;
 }
 
@@ -101,8 +127,18 @@ ul{
 }
 
 #heroText{
+    text-align: center;
     width: 50%;
     font-size: 2.3rem;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.placeholderImage{
+    width: 400px;
+    border: 1px solid white;
 }
 
 
@@ -120,12 +156,22 @@ ul{
     border-radius: 10px;
     cursor: pointer;
     transition:  transform 0.4s ease;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
 }
 
 .heroButton:hover{
     transform: scale(1.1);  
+    background-color: rgb(222, 37, 37);
 }
 
+
+.heroButton:active{
+    transition: none;
+    background-color: #bd9c72;
+}
 
 
 hr{

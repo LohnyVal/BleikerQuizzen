@@ -2,7 +2,7 @@ const quiz = [
     {
         question: "Hva betyr API?", // Informasjonsteknologi og medieproduksjon
         buttons: [
-            { 
+            {   
                 label: "Application Programming Interface", 
                 correct: true 
             },
@@ -18,7 +18,7 @@ const quiz = [
                 label: "Applied Programming Input", 
                 correct: false 
             }
-        ]
+        ],
     },
     {
         question: "Hva er en halvleder?", // Elektro og datateknologi
@@ -211,3 +211,62 @@ const quiz = [
         ]
     }
 ];
+
+
+function startQuiz() {
+    let navn = document.getElementById("navn").value;
+    document.getElementById("startQuiz").style.display = "none";
+    document.getElementById("quizContainer").style.display = "flex";
+    loadQuiz();
+}
+
+let count = 0;
+function loadQuiz() {
+    let question = quiz[count];
+    let h2 = document.getElementById("h2");
+    let  buttons = document.getElementById("buttons");
+
+    h2.textContent = question.question;
+
+    let choices = question.buttons;
+
+    for (let index = 0; index < choices.length; index++) {
+        const choice = choices[index];
+         buttons.innerHTML += `<button id="${index}" onclick="checkAnswer(${choice.correct}, ${index})">${choice.label}</button>`
+        
+    }
+
+    // choices.forEach(choice => {
+
+    //     buttons.innerHTML += `<button class="heroButton" onclick="checkAnswer()">${choice.label}</button>`
+    // });
+
+
+    
+    
+
+    
+}
+
+
+function checkAnswer(isCorrect, index) {
+    count++;
+
+    let button;
+
+    let next;
+
+
+    if(isCorrect) {
+        document.getElementById(index).classList.add("correct")
+        
+        
+    } else {
+        document.getElementById(index).classList.add("wrong")
+        
+    }
+
+    
+    
+
+}

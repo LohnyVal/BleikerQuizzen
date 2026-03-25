@@ -63,16 +63,21 @@ ul{
 .linkToHtml::after{
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: -5px;
     width: 0%;
-    height: 3px;
-    background-color: white;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #da3832;
     transition: width 0.6s ease;
 }
 
 .linkToHtml:hover::after{
     width: 100%;
+}
+
+.linkToHtml:hover{
+    transform: scale(1.06);
 }
 
 
@@ -89,13 +94,6 @@ ul{
 
 
 #centerHeroDiv{
-    /* background: linear-gradient(
-    120deg,
-    #090101,
-    #140a0a,
-    #0b0505,
-    #0b0101
-  );; */
     background: #080808;
     background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
     display: flex;
@@ -130,7 +128,6 @@ ul{
     text-align: center;
     width: 50%;
     font-size: 2.3rem;
-    opacity: 0.5;
     margin-left: 20px;
     margin-right: 20px;
     color: white;
@@ -157,7 +154,7 @@ ul{
     cursor: pointer;
     transition:  transform 0.4s ease;
     border: none;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.885);
     color: white;
     font-size: 2rem;
 }
@@ -165,6 +162,7 @@ ul{
 .heroButton:hover{
     transform: scale(1.1);  
     background-color: rgb(222, 37, 37);
+    box-shadow: 0 0 5px 1px black inset;
 }
 
 
@@ -183,8 +181,9 @@ hr{
 
 
 
+
 .videoSection{
-    height: 100vh;
+    height: 110vh;
     background-color: blue;
     display: flex;
 }
@@ -194,13 +193,77 @@ hr{
 
 
 .videoSectionWallCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
     height: 100%;
-    background-color: #bd9c72;
+    background: #080808;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
+    background: linear-gradient(180deg, rgb(255, 251, 251) 0%, rgba(8, 8, 8, 1) 100% );
 }
 
+.infoContainer{
+    border: 1px solid white;
+    box-shadow: 0 0 5px 1px black;
+    width: 90%;
+    height: 26%;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgba(222, 37, 37, 0.168);
+}
 
+.textInfoDiv{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 60%;
+}
 
+.textInfo{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "AbeeZee";
+    padding: 5px;
+}
+
+.infoVideoContainer{
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+}
+
+.infoVideo{
+    height: 70%
+}
+
+.buttonInfoDiv{
+    display: flex;
+    justify-content: flex-end;
+    width: 97%;
+}
+
+.buttonInfo{
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.733);
+    transition:  transform 0.4s ease;
+    border: none;
+    color: white;
+
+}
+
+.buttonInfo:hover{
+    transform: scale(1.1);  
+    background-color: rgb(222, 37, 37);
+    box-shadow: 0 0 5px 1px black inset;
+}
 
 .videoDiv{
     display: flex;
@@ -215,7 +278,7 @@ hr{
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: black;
     height: 200px;
     margin-top: auto;
 }
@@ -223,6 +286,7 @@ hr{
 
 .footerText{
     font-size: 1.5rem;
+    color: white;
 }
 
 #footerLogo{
@@ -231,7 +295,10 @@ hr{
 
 
 
+#quizContainer {
+    display: none;
 
+}
 
 @font-face {
     font-family: "Montserrat";

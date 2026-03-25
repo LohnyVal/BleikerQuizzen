@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+}
+:root {
+    --primary-color:  white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #bd9c72;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.leftNavDiv{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+#logo{
+    width: 100%;    
+    margin-left: 20px;
+  
+}
+
+.centerNavDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.linkToHtml{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.linkToHtml::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: width 0.6s ease;
+}
+
+.linkToHtml:hover::after{
+    width: 100%;
+}
+
+
+
+
+.hero{
+    display: flex;
+    height: 90vh;
+    position: relative;
+}
+
+
+
+
+
+#centerHeroDiv{
+    /* background: linear-gradient(
+    120deg,
+    #090101,
+    #140a0a,
+    #0b0505,
+    #0b0101
+  );; */
+    background: #080808;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.heroTitleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#quizHeaderText{
+    font-family: "Montserrat";
+    color: var(--primary-color);
+    filter: brightness(1.25);
+    font-size: 7rem;
+}
+
+.heroTextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heroText{
+    text-align: center;
+    width: 50%;
+    font-size: 2.3rem;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.placeholderImage{
+    width: 400px;
+    border: 1px solid white;
+}
+
+
+.heroButtonsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+}
+
+.heroButton{
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  transform 0.4s ease;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+}
+
+.heroButton:hover{
+    transform: scale(1.1);  
+    background-color: rgb(222, 37, 37);
+}
+
+
+.heroButton:active{
+    transition: none;
+    background-color: #bd9c72;
+}
+
+
+hr{
+    border: none;
+    height: 6px;
+    background-color: black;
+}
+
+
+
+
+.videoSection{
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+}
+
+
+
+
+
+.videoSectionWallCenter{
+    width: 100%;
+    height: 100%;
+    background-color: #bd9c72;
+}
+
+
+
+
+.videoDiv{
+    display: flex;
+    background-color: red;
+}
+
+
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 200px;
+    margin-top: auto;
+}
+
+
+.footerText{
+    font-size: 1.5rem;
+}
+
+#footerLogo{
+    width: 10%;
+}
+
+
+
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "ABeeZee";
+    src: url("../fonts/ABeeZee-Regular.ttf");
+}

@@ -1,0 +1,5 @@
+.heroVideo{
+    height: 90vh;
+    background: #080808;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
+}

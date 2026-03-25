@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/video.css">
-    <script src="../js/video.js" defer></script>
+    <link rel="stylesheet" href="../css/quiz.css">
+    <script src="../js/quiz.js" defer></script>
 </head>
 <body>
     <nav>
@@ -30,8 +30,26 @@
             </div>
         </ul>
     </nav>
+    <section class="heroQuiz">
+        <div id="wrapper">
 
-    <section class="heroVideo"></section>
+            <h1>QUIZZEN</h1>
+
+            <div id="startQuiz">
+                <label for="navn">Skriv inn ditt navn her</label>
+                <input type="text" id="navn" class="navn" name="navn"> 
+                <button onclick="startQuiz()"></button>
+            </div>
+
+            <div id="quizContainer">
+                <h2 id="h2">Spørsmål</h2>
+                <div id="video"></div>
+                <div id="buttons">
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

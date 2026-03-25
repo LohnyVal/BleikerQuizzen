@@ -9,10 +9,15 @@ html{
 }
 
 body{
-    background-color: #bd9c72;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    filter: blur(3px);
+    transition: filter 1.3s ease;
+}
+
+body.loaded{
+    filter: blur(0);
 }
 
 nav{
@@ -56,6 +61,7 @@ ul{
     position: relative;
     text-decoration: none;
     color: white;
+    font-family: "Montserrat";
     font-size: 2rem;
     transition: transform 0.2s ease;
 }
@@ -156,6 +162,7 @@ ul{
     transition:  transform 0.4s ease;
     border: none;
     background-color: rgba(255, 0, 0, 0.885);
+    font-family: "ABeeZee";
     color: white;
     font-size: 2rem;
 }
@@ -185,7 +192,6 @@ hr{
 
 .videoSection{
     height: 110vh;
-    background-color: blue;
     display: flex;
 }
 
@@ -213,7 +219,7 @@ hr{
     height: 26%;
     border-radius: 10px;
     display: flex;
-    background-color: rgba(222, 37, 37, 0.168);
+    background-color: #FBF8F7;
 }
 
 .textInfoDiv{
@@ -254,6 +260,7 @@ hr{
     font-size: 1.8rem;
     cursor: pointer;
     background-color: rgba(255, 0, 0, 0.733);
+    font-family: "ABeeZee";
     transition:  transform 0.4s ease;
     border: none;
     color: white;
@@ -288,6 +295,7 @@ hr{
 .footerText{
     font-size: 1.5rem;
     color: white;
+    font-family: "ABeeZee";
 }
 
 #footerLogo{
@@ -300,6 +308,11 @@ hr{
     display: none;
 
 }
+
+
+
+
+
 
 @font-face {
     font-family: "Montserrat";

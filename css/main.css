@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    /* styles for body */
+}
+
+/* Classes */
+.leftNavDiv {
+    flex-direction: row;
+}
+
+.centerNavDiv {
+    /* styles for .centerNavDiv */
+}
+
+.linkToHtml {
+    /* styles for .linkToHtml */
+}
+
+.hero {
+    /* styles for .hero */
+}
+
+.heroTitleDiv {
+    /* styles for .heroTitleDiv */
+}
+
+.heroTextDiv {
+    /* styles for .heroTextDiv */
+}
+
+.heroButtonsDiv {
+    /* styles for .heroButtonsDiv */
+}
+
+.heroButton {
+    /* styles for .heroButton */
+}
+
+.videoSection {
+    /* styles for .videoSection */
+}
+
+.videoSectionWallCenter {
+    /* styles for .videoSectionWallCenter */
+}
+
+.infoContainer {
+    /* styles for .infoContainer */
+}
+
+.info {
+    /* styles for .info */
+}
+
+.textInfoDiv {
+    /* styles for .textInfoDiv */
+}
+
+.textInfo {
+    /* styles for .textInfo */
+}
+
+.buttonInfoDiv {
+    /* styles for .buttonInfoDiv */
+}
+
+.buttonInfo {
+    /* styles for .buttonInfo */
+}
+
+.infoVideoContainer {
+    /* styles for .infoVideoContainer */
+}
+
+.infoVideo {
+    /* styles for .infoVideo */
+}
+
+.footer {
+    /* styles for .footer */
+}
+
+.footerText {
+    /* styles for .footerText */
+}
+
+/* IDs */
+#logo {
+    /* styles for #logo */
+}
+
+#centerHeroDiv {
+    /* styles for #centerHeroDiv */
+}
+
+#quizHeaderText {
+    /* styles for #quizHeaderText */
+}
+
+#heroText {
+    /* styles for #heroText */
+}
+
+#footerLogo {
+    /* styles for #footerLogo */
+}
+
+
+nav, ul, .leftNavDiv {
+    display: flex;
+    
+}
+nav ul li {
+    list-style: none;
+}
+

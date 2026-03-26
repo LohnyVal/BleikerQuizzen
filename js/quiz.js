@@ -22,7 +22,6 @@ const quiz = [
   },
   {
     question: "Hva er en halvleder?", // Elektro og datateknologi
-    videoURL: "../video/andreas_klipping.mp4",
     buttons: [
       {
         label: "Et materiale som alltid leder strøm",
@@ -65,7 +64,7 @@ const quiz = [
   },
   {
     question: "Hva er VO₂-maks?",
-    videoURL: "../video/main.mp4",
+
     buttons: [
       {
         label: "Maks muskelstyrke",
@@ -81,6 +80,24 @@ const quiz = [
       },
       {
         label: "Maks fettforbrenning",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: "Hvilke nett er skal vi bruke på skolen?",
+    videoURL: "../video/andreas_klipping.mp4",
+    buttons: [
+      {
+        label: "FRID gjestnett",
+        correct: false,
+      },
+      {
+        label: "FRID",
+        correct: true,
+      },
+      {
+        label: "FRID-net",
         correct: false,
       },
     ],
@@ -213,6 +230,9 @@ const quiz = [
   },
 ];
 
+
+
+
 let isAnswered = false;
 let count = 0;
 let poengSum = 0;
@@ -222,6 +242,9 @@ let h2 = document.getElementById("h2");
 let buttons = document.getElementById("buttons");
 let quizContainer = document.getElementById("quizContainer");
 let summaryContainer = document.getElementById("summaryContainer");
+let videoConatiner = document.getElementById("video");
+let feedback = document.getElementById("feedback")
+let showCurrentQuestion = document.getElementById("showCurrentQuestion");
 
 function startQuiz() {
   let navn = document.getElementById("navn").value;
@@ -231,10 +254,24 @@ function startQuiz() {
 }
 
 function loadQuiz() {
+
+  isAnswered = false;
   let question = quiz[count];
 
-  h2.textContent = question.question;
+  showCurrentQuestion.textContent = `Spørsmål ${count + 1} / ${quiz.length}`;
 
+  h2.textContent = question.question;
+  if(question.videoURL){
+   videoConatiner.innerHTML = `
+      <video width="400" controls>
+        <source src="${question.videoURL}" type="video/mp4">
+        Din nettleser støtter ikke video.
+      </video>
+    `;
+    videoConatiner.style.display = "block";
+  } else {
+    videoConatiner.style.display = "none";
+  }
   let choices = question.buttons;
 
   for (let index = 0; index < choices.length; index++) {
@@ -245,30 +282,41 @@ function loadQuiz() {
 }
 
 function checkAnswer(isCorrect, index) {
+  if(isAnswered){
+    return;
+  }
+
   let button;
 
   let next;
   isAnswered = true;
 
+  const allButtons = buttons.querySelectorAll("button");
+  allButtons.forEach(btn => {
+    btn.disabled = true;
+  });
+
   
   if (isCorrect) {
       document.getElementById(index).classList.add("correct");
       poengSum++;
+      feedback.textContent = "Riktig ✅"
       nextContainer.innerHTML = `<button onclick="nextQuestion()" id="nextButton">Next</button>`;
     } else {
         document.getElementById(index).classList.add("wrong");
+        feedback.textContent= "Feil   ❌"
         nextContainer.innerHTML = `<button onclick="nextQuestion()" id="nextButton">Next</button>`;
     }
 }
 
 function nextQuestion() {
     count++;
-    let isLastQuestion = quiz.length;
+  let isLastQuestion = quiz.length;
   console.log(count);
   nextContainer.innerHTML = "";
   buttons.innerHTML = "";
   h2.textContent = "";
-
+  feedback.textContent = ""
   if(isLastQuestion <= count) {
     console.log("show summary")
 

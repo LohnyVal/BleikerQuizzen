@@ -1,4 +1,51 @@
 .heroSoMe{
-    height: 90vh;background: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #080808;
     background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
+}
+
+#wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(222, 37, 37, 0.168);
+    border: 0.2px solid white;
+    border-radius: 20px;
+    height: 70%;
+    width: 90%;
+}
+
+.imageOfAdDiv{
+    height: 100%;
+    width: 30%;
+    border: 1px solid white;
+}
+
+#faceBookAdDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    height: 20%;
+    width: 100%;
+}
+
+#instagramAdDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    height: 20%;
+    width: 100%;
+}
+
+#tiktokAdDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    height: 20%;
+    width: 100%;
 }

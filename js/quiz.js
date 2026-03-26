@@ -97,7 +97,7 @@ const quiz = [
         correct: true,
       },
       {
-        label: "FRID-net",
+        label: "FRID-iot",
         correct: false,
       },
     ],
@@ -231,11 +231,18 @@ const quiz = [
 ];
 
 
+let correctSound = new Audio("../sound/right.mp3");
+let wrongSound = new Audio("../sound/wrong.mp3");
+let doneSound = new Audio("../sound/quizDone.mp3");
 
 
 let isAnswered = false;
 let count = 0;
 let poengSum = 0;
+let wrongSymbol = "❌";
+let correctSymbol = "✅"
+
+let medals = ["🥇", "🥈", "🥉", "4", "5"] // Trenger jeg dette?
 
 let nextContainer = document.getElementById("next");
 let h2 = document.getElementById("h2");
@@ -287,7 +294,6 @@ function checkAnswer(isCorrect, index) {
   }
 
   let button;
-
   let next;
   isAnswered = true;
 
@@ -300,11 +306,15 @@ function checkAnswer(isCorrect, index) {
   if (isCorrect) {
       document.getElementById(index).classList.add("correct");
       poengSum++;
-      feedback.textContent = "Riktig ✅"
+      correctSound.currentTime = 0;
+      correctSound.play()
+      feedback.textContent = `Riktig ${correctSymbol}`;
       nextContainer.innerHTML = `<button onclick="nextQuestion()" id="nextButton">Next</button>`;
     } else {
         document.getElementById(index).classList.add("wrong");
-        feedback.textContent= "Feil   ❌"
+        wrongSound.currentTime = 0;
+        wrongSound.play()
+        feedback.textContent= `Feil ${wrongSymbol}`
         nextContainer.innerHTML = `<button onclick="nextQuestion()" id="nextButton">Next</button>`;
     }
 }
@@ -318,8 +328,8 @@ function nextQuestion() {
   h2.textContent = "";
   feedback.textContent = ""
   if(isLastQuestion <= count) {
-    console.log("show summary")
-
+    doneSound.currentTime = 0;
+    doneSound.play()
     summaryContainer.style.display = "flex";
     document.getElementById("points").textContent = `Du fikk totalt ${poengSum} av ${quiz.length} poeng`
 

@@ -68,8 +68,9 @@ ul{
     left: 50%;
     bottom: -5px;
     width: 0%;
+    border-radius: 5px;
     transform: translateX(-50%);
-    height: 1px;
+    height: 2px;
     background-color: #da3832;
     transition: width 0.6s ease;
 }
@@ -216,12 +217,17 @@ hr{
     border-radius: 10px;
     display: flex;
     background-color: #FBF8F7;
+    transition: transform 0.3s ease;
+}
+
+.infoContainer:hover{
+    transform: translateY(-10px);
 }
 
 .textInfoDiv{
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 99.9%;
     height: 60%;
 }
 
@@ -235,12 +241,19 @@ hr{
 .infoVideoContainer{
     display: flex;
     width: fit-content;
+    justify-content: center;
     height: 100%;
+    width:60%;
     align-items: center;
 }
 
 .infoVideo{
-    height: 70%
+    height: 80%;   
+    width: 80%; 
+    object-fit: cover;
+    padding: 0 10px;
+    border-radius: 20px;
+    
 }
 
 .buttonInfoDiv{

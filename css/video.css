@@ -3,3 +3,87 @@
     background: #080808;
     background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
 }
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 100%;
+}
+
+#videoTitleTextDiv{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    font-family: "Montserrat";
+}
+
+
+#videoTitleText{
+    color: white;
+    font-size: 2.6rem;
+}
+
+
+#videoContainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 55%;
+    width: 100%;
+}
+
+#video1, #video2, #video3{
+    width: 29%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    background-color: rgba(77, 22, 22, 0.377);
+    border: 1px solid white;
+
+}
+
+#video1:hover, #video2:hover, #video3:hover{
+    transform: scale(1.01) translateY(-12px);
+    box-shadow: 0 0 10px 1px black;
+
+}
+
+
+
+.video1Div{
+    height: 70%;
+    width: 100%;
+}
+
+#videoImagePlaceholder{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.infoAboutVideoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.videoDesctiption{
+    color: white;
+    font-size: 1.3rem;
+    font-family: "ABeeZee";
+  
+}
+
+.videoTitle{
+    color: white;
+    padding: 10px;
+    font-family: "Montserrat";
+}
+

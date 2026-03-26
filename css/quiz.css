@@ -55,3 +55,11 @@ h2{
     align-items: center;
     height: 50%;
 }
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}

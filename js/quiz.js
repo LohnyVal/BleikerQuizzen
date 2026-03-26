@@ -247,26 +247,32 @@ function loadQuiz() {
 
     
 }
-
+let isAnswered = false;
 
 function checkAnswer(isCorrect, index) {
-    count++;
 
     let button;
 
     let next;
-
+    isAnswered = true;
 
     if(isCorrect) {
         document.getElementById(index).classList.add("correct")
+        document.getElementById("quizContainer").innerHTML = `<button onclick="nextQuestion()" id="nextButton">Next</button>`
         
         
     } else {
         document.getElementById(index).classList.add("wrong")
+
         
     }
 
     
     
 
+}
+
+function nextQuestion() {
+    count++;
+    loadQuiz();
 }

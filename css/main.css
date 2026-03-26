@@ -112,7 +112,7 @@ ul{
 }
 
 #quizHeaderText{
-    font-family: "Montserrat";
+    font-family: "MarkerFelt";
     color: var(--primary-color);
     filter: brightness(1.25);
     font-size: 7rem;
@@ -126,11 +126,12 @@ ul{
 
 #heroText{
     text-align: center;
-    width: 50%;
+    width: 70%;
     font-size: 2.3rem;
     margin-left: 20px;
     margin-right: 20px;
     color: white;
+    font-family: "ABeeZee";
 }
 
 .placeholderImage{
@@ -295,10 +296,7 @@ hr{
 
 
 
-#quizContainer {
-    display: none;
 
-}
 
 @font-face {
     font-family: "Montserrat";
@@ -308,4 +306,10 @@ hr{
 @font-face {
     font-family: "ABeeZee";
     src: url("../fonts/ABeeZee-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "MarkerFelt";
+    src: url("../fonts/Marker\ Felt.ttf");
 }

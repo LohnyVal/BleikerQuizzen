@@ -39,15 +39,22 @@
             <div id="startQuiz">
                 <label for="navn">Skriv inn ditt navn her</label>
                 <input type="text" id="navn" class="navn" name="navn"> 
-                <button onclick="startQuiz()">Start quiz</button>
+                <button onclick="startQuiz()">Start Quiz</button>
             </div>
 
             <div id="quizContainer">
                 <h2 id="h2">Spørsmål</h2>
                 <div id="video"></div>
-                <div id="buttons">
+                <div id="buttons" class="buttons">
 
                 </div>
+                <div id="next"></div>
+            </div>
+
+
+            <div id="summaryContainer">
+                <h2>Ditt sammendrag</h2>
+                <p id="points"></p>
             </div>
         </div>
     </section>

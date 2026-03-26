@@ -4,7 +4,10 @@ body{
     display: flex;
     justify-content: center;
     
+    
 }
+
+
 
 .heroGraphic{
     height: 90vh;
@@ -23,7 +26,7 @@ body{
     background-color: rgba(222, 37, 37, 0.168);
     border: 0.2px solid white;
     height: 80%;
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
     padding: 5px 20px;
 }
@@ -40,6 +43,12 @@ body{
     border-radius: 5px;
 
 }
+
+#fontsDiv:hover, #ColorDiv:hover, #logoDiv:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 1px black;
+}
+
 
 
 
@@ -96,7 +105,7 @@ body{
 #colorBlackDiv{
     width: 33%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 #colorWhiteDiv{
@@ -135,26 +144,70 @@ body{
     display: flex;
 }
 
-#h1FontTypeDiv{
-    background-color: green;
+
+#pFontTypeDiv{
+    background-color: rgba(0, 0, 0, 0.482);
     height: 100%;
-    width: 25%
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#h1FontTypeDiv{
+    background-color: rgba(0, 0, 0, 0.482);
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #h2FontTypeDiv{
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.482);
     height: 100%;
-    width: 25%
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #h3FontTypeDiv{
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.482);
     height: 100%;
-    width: 25%
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#pFontTypeDiv{
-    background-color: orange;
-    height: 100%;
-    width: 25%
+
+
+
+
+#pTagFont{
+    font-family: "ABeeZee";
+    color: white;
+}
+
+#h1TagFont{
+    font-family: "MarkerFelt";
+    color: white;
+}
+
+#h2TagFont{
+    font-family: "Montserrat";
+    color: white;
+}
+#h3TagFont{
+    font-family: "Montserrat";
+    color: white;
+}
+
+.styleColorForEachTagShowcase{
+    color: white;
 }

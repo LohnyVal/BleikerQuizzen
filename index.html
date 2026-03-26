@@ -6,12 +6,13 @@
     <title>Bleiker Quizzen</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/script.js" defer></script>
+    <script src="./js/grafisk.js" defer></script>
 </head>
 <body>
     <nav>
         <ul>
             <div class="leftNavDiv">
-                <li><a href="./index.html"><img src="./img/svart.png" alt="" id="logo"></a></li>
+                <li><a href="./index.html"><img src="./img/svart.png" alt="" id="logo" draggable="false"></a></li>
             </div>
             <div class="centerNavDiv">
                 <li><a href="./html/grafiskDesign.html" class="linkToHtml">
@@ -58,11 +59,13 @@
                         <p class="textInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic cum quod quis numquam eaque ad veritatis itaque sequi accusantium exercitationem voluptates voluptatem assumenda, pariatur nemo magnam vitae repudiandae tempora!</p>
                     </div>
                     <div class="buttonInfoDiv">
-                        <button class="buttonInfo">Videoer</button>
+                        <a href="./html/video.html">
+                            <button class="buttonInfo" id="buttonVideo">Videoer</button>
+                        </a>
                     </div>
                 </div>
                 <div class="infoVideoContainer">
-                    <video src="./video/IKT_bleikerQuizzen.mp4" class="infoVideo" controls></video>
+                    <img src="./img/Skjermbilde 2026-03-25 kl. 21.14.29.png" alt="" class="infoVideo">
                 </div>
             </div>
             <div class="infoContainer">
@@ -71,11 +74,13 @@
                         <p class="textInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic cum quod quis numquam eaque ad veritatis itaque sequi accusantium exercitationem voluptates voluptatem assumenda, pariatur nemo magnam vitae repudiandae tempora!</p>
                     </div>
                     <div class="buttonInfoDiv">
-                        <button class="buttonInfo">Quiz</button>
+                        <a href="./html/quiz.html">
+                            <button class="buttonInfo" id="buttonQuiz">Quiz</button>
+                        </a>
                     </div>
                 </div>
                 <div class="infoVideoContainer">
-                    <video src="./video/IKT_bleikerQuizzen.mp4" class="infoVideo" controls></video>
+                    <img src="./img/Skjermbilde 2026-03-25 kl. 21.14.29.png" alt="" class="infoVideo">
                 </div>
             </div>
             <div class="infoContainer">
@@ -84,18 +89,20 @@
                         <p class="textInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic cum quod quis numquam eaque ad veritatis itaque sequi accusantium exercitationem voluptates voluptatem assumenda, pariatur nemo magnam vitae repudiandae tempora!</p>
                     </div>
                     <div class="buttonInfoDiv">
-                        <button class="buttonInfo">SoMe</button>
+                        <a href="./html/soMe.html">
+                            <button class="buttonInfo" id="buttonGrafisk">Garfisk</button>
+                        </a>
                     </div>
                 </div>
                 <div class="infoVideoContainer">
-                    <video src="./video/IKT_bleikerQuizzen.mp4" class="infoVideo" controls></video>
+                    <img src="./img/grafisk.png" alt="" class="infoVideo">
                 </div>
             </div>
         </div>
         </div>
     </section>
     <footer class="footer">
-        <img src="./img/svart.png" alt="" id="footerLogo">
+        <img src="./img/svart.png" alt="" id="footerLogo" draggable="false">
         <p class="footerText">Laget av: Andreas 1IMB</p>
         <p class="footerText">Kontak: IngenMailTilDeg@gmail.com</p>
     </footer>

@@ -9,11 +9,12 @@ html{
 }
 
 body{
-    background-color: #bd9c72;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+  
 }
+
 
 nav{
     display: flex;
@@ -56,6 +57,7 @@ ul{
     position: relative;
     text-decoration: none;
     color: white;
+    font-family: "Montserrat";
     font-size: 2rem;
     transition: transform 0.2s ease;
 }
@@ -66,8 +68,9 @@ ul{
     left: 50%;
     bottom: -5px;
     width: 0%;
+    border-radius: 5px;
     transform: translateX(-50%);
-    height: 1px;
+    height: 2px;
     background-color: #da3832;
     transition: width 0.6s ease;
 }
@@ -156,6 +159,7 @@ ul{
     transition:  transform 0.4s ease;
     border: none;
     background-color: rgba(255, 0, 0, 0.885);
+    font-family: "ABeeZee";
     color: white;
     font-size: 2rem;
 }
@@ -185,7 +189,6 @@ hr{
 
 .videoSection{
     height: 110vh;
-    background-color: blue;
     display: flex;
 }
 
@@ -213,13 +216,18 @@ hr{
     height: 26%;
     border-radius: 10px;
     display: flex;
-    background-color: rgba(222, 37, 37, 0.168);
+    background-color: #FBF8F7;
+    transition: transform 0.3s ease;
+}
+
+.infoContainer:hover{
+    transform: translateY(-10px);
 }
 
 .textInfoDiv{
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 99.9%;
     height: 60%;
 }
 
@@ -233,12 +241,19 @@ hr{
 .infoVideoContainer{
     display: flex;
     width: fit-content;
+    justify-content: center;
     height: 100%;
+    width:60%;
     align-items: center;
 }
 
 .infoVideo{
-    height: 70%
+    height: 80%;   
+    width: 80%; 
+    object-fit: cover;
+    padding: 0 10px;
+    border-radius: 20px;
+    
 }
 
 .buttonInfoDiv{
@@ -254,6 +269,7 @@ hr{
     font-size: 1.8rem;
     cursor: pointer;
     background-color: rgba(255, 0, 0, 0.733);
+    font-family: "ABeeZee";
     transition:  transform 0.4s ease;
     border: none;
     color: white;
@@ -288,11 +304,17 @@ hr{
 .footerText{
     font-size: 1.5rem;
     color: white;
+    font-family: "ABeeZee";
 }
 
 #footerLogo{
     width: 10%;
 }
+
+
+
+
+
 
 
 

@@ -242,10 +242,6 @@ function loadQuiz() {
     buttons.innerHTML += `<button id="${index}" onclick="checkAnswer(${choice.correct}, ${index})">${choice.label}</button>`;
   }
 
-  // choices.forEach(choice => {
-
-  //     buttons.innerHTML += `<button class="heroButton" onclick="checkAnswer()">${choice.label}</button>`
-  // });
 }
 
 function checkAnswer(isCorrect, index) {

@@ -1,5 +1,6 @@
 const quiz = [
   {
+    
     question: "Hva betyr API?", // Informasjonsteknologi og medieproduksjon
     buttons: [
       {
@@ -270,10 +271,9 @@ function loadQuiz() {
   showCurrentQuestion.textContent = `Spørsmål ${count + 1} / ${quiz.length}`;
   h2.textContent = question.question;
 
-  // 🔥 Clear old buttons
+
   buttons.innerHTML = "";
 
-  // 🎬 Handle video (Google Drive iframe)
   if (question.videoURL) {
     videoContainer.innerHTML = `
       <iframe 
@@ -290,7 +290,7 @@ function loadQuiz() {
     videoContainer.innerHTML = "";
   }
 
-  // Create buttons
+  
   question.buttons.forEach((choice, index) => {
     buttons.innerHTML += `
       <button onclick="checkAnswer(${choice.correct}, ${index})" id="${index}">

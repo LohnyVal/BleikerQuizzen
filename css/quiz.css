@@ -5,7 +5,7 @@
     rgba(8, 8, 8, 1) 0%,
     rgb(255, 251, 251) 100%
   );
-  height: 100vh;
+  height: 110vh;
 }
 
 h1 {
@@ -56,7 +56,7 @@ h2 {
 
 #buttons button {
   flex: 0 1 calc(50% - 25px);
-  padding: 40px 30px;     
+  padding: 30px 20px;     
   font-size: 1.5rem;          
   border: 1px solid black;
   border-radius: 8px;

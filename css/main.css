@@ -214,15 +214,15 @@ hr{
     border: 1px solid white;
     box-shadow: 0 0 5px 1px black;
     width: 90%;
+    border-radius: 15px;
     height: 26%;
-    border-radius: 10px;
     display: flex;
     background-color: #FBF8F7;
-    transition: transform 0.3s ease;
+    transition: border-radius 0.3s ease;
 }
 
 .infoContainer:hover{
-    transform: translateY(-10px);
+    border-radius: 40px;
 }
 
 .textInfoDiv{
@@ -315,8 +315,9 @@ hr{
 
 
 
-
-
+.footer p a{
+    color: white;
+}
 
 
 

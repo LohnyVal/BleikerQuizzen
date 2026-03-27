@@ -123,111 +123,111 @@ const quiz = [
       },
     ],
   },
-  {
-    question: "Hva er globalisering?",
-    buttons: [
-      {
-        label: "Lokale markeder",
-        correct: false,
-      },
-      {
-        label: "Økt samarbeid og handel mellom land",
-        correct: true,
-      },
-      {
-        label: "Mindre handel",
-        correct: false,
-      },
-      {
-        label: "Bare turisme",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Hva er CRM i salg?",
-    buttons: [
-      {
-        label: "Customer Relationship Management",
-        correct: true,
-      },
-      {
-        label: "Computer Retail Machine",
-        correct: false,
-      },
-      {
-        label: "Customer Retail Method",
-        correct: false,
-      },
-      {
-        label: "Commerce Retail Model",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Hva er pneumatikk?",
-    buttons: [
-      {
-        label: "Luftbasert kraftsystem",
-        correct: true,
-      },
-      {
-        label: "Elektrisk motor",
-        correct: false,
-      },
-      {
-        label: "Vannsystem",
-        correct: false,
-      },
-      {
-        label: "Sveising",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Hva er vanlig arbeidstid i Norge for en fulltidsjobb?",
-    buttons: [
-      {
-        label: "Ca. 20 timer per uke",
-        correct: false,
-      },
-      {
-        label: "Ca. 37,5 timer per uke",
-        correct: true,
-      },
-      {
-        label: "Ca. 50 timer per uke",
-        correct: false,
-      },
-      {
-        label: "Ca. 60 timer per uke",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Hva handler psykisk helse om?",
-    buttons: [
-      {
-        label: "Bare fysisk styrke",
-        correct: false,
-      },
-      {
-        label: "Hvordan vi har det mentalt og følelsesmessig",
-        correct: true,
-      },
-      {
-        label: "Hvor mye vi trener",
-        correct: false,
-      },
-      {
-        label: "Hva vi spiser",
-        correct: false,
-      },
-    ],
-  },
+  // {
+  //   question: "Hva er globalisering?",
+  //   buttons: [
+  //     {
+  //       label: "Lokale markeder",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Økt samarbeid og handel mellom land",
+  //       correct: true,
+  //     },
+  //     {
+  //       label: "Mindre handel",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Bare turisme",
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   question: "Hva er CRM i salg?",
+  //   buttons: [
+  //     {
+  //       label: "Customer Relationship Management",
+  //       correct: true,
+  //     },
+  //     {
+  //       label: "Computer Retail Machine",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Customer Retail Method",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Commerce Retail Model",
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   question: "Hva er pneumatikk?",
+  //   buttons: [
+  //     {
+  //       label: "Luftbasert kraftsystem",
+  //       correct: true,
+  //     },
+  //     {
+  //       label: "Elektrisk motor",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Vannsystem",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Sveising",
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   question: "Hva er vanlig arbeidstid i Norge for en fulltidsjobb?",
+  //   buttons: [
+  //     {
+  //       label: "Ca. 20 timer per uke",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Ca. 37,5 timer per uke",
+  //       correct: true,
+  //     },
+  //     {
+  //       label: "Ca. 50 timer per uke",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Ca. 60 timer per uke",
+  //       correct: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   question: "Hva handler psykisk helse om?",
+  //   buttons: [
+  //     {
+  //       label: "Bare fysisk styrke",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Hvordan vi har det mentalt og følelsesmessig",
+  //       correct: true,
+  //     },
+  //     {
+  //       label: "Hvor mye vi trener",
+  //       correct: false,
+  //     },
+  //     {
+  //       label: "Hva vi spiser",
+  //       correct: false,
+  //     },
+  //   ],
+  // }
 ];
 
 let correctSound = new Audio("../sound/right.mp3");

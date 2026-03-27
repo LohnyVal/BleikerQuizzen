@@ -12,6 +12,7 @@ body{
 .heroGraphic{
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #080808;
@@ -210,4 +211,13 @@ body{
 
 .styleColorForEachTagShowcase{
     color: white;
+}
+
+
+#gradiskDesignTitle{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    font-size: 2.3rem;
+    font-family: "Montserrat";
 }

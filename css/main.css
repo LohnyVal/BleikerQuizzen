@@ -25,7 +25,7 @@ nav{
 
 }
 
-ul{
+nav ul{
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -188,7 +188,7 @@ hr{
 
 
 .videoSection{
-    height: 110vh;
+    height: 150vh;
     display: flex;
 }
 
@@ -210,6 +210,7 @@ hr{
 }
 
 .infoContainer{
+    margin-top: 20px;
     border: 1px solid white;
     box-shadow: 0 0 5px 1px black;
     width: 90%;
@@ -229,6 +230,7 @@ hr{
     align-items: center;
     width: 99.9%;
     height: 60%;
+    padding: 10px;
 }
 
 .textInfo{
@@ -240,10 +242,10 @@ hr{
 
 .infoVideoContainer{
     display: flex;
-    width: fit-content;
+    min-width: 30%;;
     justify-content: center;
     height: 100%;
-    width:60%;
+    width: 60%;
     align-items: center;
 }
 

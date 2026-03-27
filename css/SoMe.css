@@ -1,4 +1,133 @@
-.heroSoMe{
-    height: 90vh;background: #080808;
-    background: linear-gradient(180deg, rgba(8, 8, 8, 1) 0%, rgb(255, 251, 251) 100%);
+
+.heroSoMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(180deg, #080808 0%, #f5f5f5 100%);
+}
+
+
+#wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 70%;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(222, 37, 37, 0.168);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.imageOfAdDiv {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.imageOfAdDiv:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.592);
+}
+
+
+#faceBookAdDiv, #instagramAdDiv, #tiktokAdDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+#faceBookAdDiv, #instagramAdDiv, #tiktokAdDiv{
+    background-color: black;
+}
+  
+
+#facebookText, #instagramText, #tiktokText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+#faceBookAdDiv h2, #instagramAdDiv h2, #tiktokAdDiv h2 {
+    margin: 0;
+    font-family: "montserrat";
+    background-color: rgba(15, 14, 14, 0.807);
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    border: 1px solid white;
+    
+}
+
+h3 {
+    margin: 10px 0 0 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-size: 1.6rem;
+}
+
+.ratioText{
+    font-family: "Montserrat";
+}
+
+.adAboutText{
+    font-family: "ABeeZee";
+}
+
+
+.adiamge {
+    width: 80%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imageOfAdDiv:hover .adiamge {
+    transform: scale(1.2);
+}
+
+#facebookText::after, #instagramText::after, #tiktokText::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: red;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+#asImageFacebook{
+    height: 100%;
+}
+
+#SoMeTitle{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2.3rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
